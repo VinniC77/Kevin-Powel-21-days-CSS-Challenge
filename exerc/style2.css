@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    background: #23424A;
+    color: #FFF;
+
+    width: 80%;
+    margin: 0 auto;
+
+    /* height: 300px; */
+    /* If we simple take the height off, the sites is responsive becasue the area automatically adapt to englobe the text */
+
+    /* If we need to have a bigger heigth of a background, instead of setting a height,
+    We can use the padding with "em" sizes
+    */ 
+    padding: 5em; /* 16px * 5 = 80px */
+    /* The em property is related to the parent font-size, which is by default 16px */
+
+}
