@@ -33,6 +33,10 @@ header {
     font-size: .9rem;
 }
 
+.nav__list--primary {
+    margin: 0 auto;
+}
+
 /* Esse seletor seleciona o elemento seguinte ao nav__item sem selecionar o primeiro */
 .nav__item + .nav__item {
     margin-left: 1em;
