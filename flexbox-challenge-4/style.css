@@ -20,6 +20,7 @@ section {
 .container {
     width: 85%;
     margin: 0 auto;
+    max-width: 1128px;
 }
 
 .section-title {
@@ -44,6 +45,9 @@ h2 {
     padding: 200px 0;
     text-align: center;
     color: #824936;
+    min-height: 660px;
+    display: flex;
+    align-items: center;
 }
 
 .intro__text {
@@ -66,4 +70,25 @@ h2 {
 .section-three {
     background-color: #824936;
     color: #FFF;
+}
+
+/* 800px ou acima */
+@media (min-width: 800px) {
+    .row {
+        display: flex;
+    }
+
+    .col {
+        width: 100%;
+/* In this case, Flex-grow of 1 will have the same effect on it */
+    }
+
+/* // o seletor abaixo afeta tudo que está posterior ao primeiro item (col, no caso) */
+    .col + .col {
+        margin-left: 4em;
+    }
+
+    .intro__title {
+        font-size: 3.75rem;
+    }
 }
