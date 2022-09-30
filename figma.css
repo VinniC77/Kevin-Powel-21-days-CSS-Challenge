@@ -124,3 +124,21 @@ h1 {
     padding: .5em 2em;
     border-radius: 100px;
 }
+
+/* de 0 a no máximo 600px, ou seja, de 600px pra baixo */
+@media (max-width: 600px) {
+    row {
+        display: block;
+    }
+
+    .hero__text,
+    .hero__img,
+    .sidebar,
+    .primary-content {
+        width: 100%;
+    }
+
+    .hero__img {
+        margin-top: 2em;
+    }
+}
